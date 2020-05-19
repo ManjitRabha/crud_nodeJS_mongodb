@@ -1,0 +1,15 @@
+extends layout.pug
+
+block append head
+  link(rel="stylesheet", href="/css/all.css")
+block content
+  include includes/navbar.pug
+  div#read-article
+    h1= title
+    h3= Records.title
+    h4 Written by #{ Records.author}
+    h6= Records.body
+    br
+  div#manage-btn
+    a.btn.btn-danger.mybtn(href="/deleteArticle/"+ Records._id) Delete
+    a.btn.btn-success.mybtn.btn-padding(href="/editArticle/"+ Records._id) Edit

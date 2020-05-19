@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Big Stack
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+    link(rel="stylesheet", href="/css/style.css")
+  block head
+      
+           
+  body
+    section
+      include includes/navbar.pug
+      br
+      br
+    section
+
+      != messages('message', locals)
+
+    block content
+    
+
+    block foot
+      .footer
+        p Copyright &copy; 2020. All Rights reserved..Boom boom
+
+
+
+
+    
+    script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js')
+    
+    
+    

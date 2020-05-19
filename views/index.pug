@@ -1,0 +1,84 @@
+extends layout.pug
+    
+block append head
+
+block content
+    //- include includes/navbar.pug
+    main#main
+        section.sectionOne
+            .jumbotron.jumbotron-fluid.jumbo-bcg.my-jumbo
+                .container.intro
+                    h1.display-4 Learning something is simple
+                     p.lead.my-p Let&apos;s learn what we want to Learn
+        section.sectionTwo
+            .card.text-center.card-mr(style='width: 18rem;')
+                .card-body
+                h5.card-title Knonw about HTML
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+            .card.text-center.card-mr(style='width: 18rem;')
+                .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+            .card.text-center.card-mr(style='width: 18rem;')
+                .card-body
+                h5.card-title Special title treatment
+                p.card-text With supporting text below as a natural lead-in to additional content.
+                a.btn.btn-primary(href='#') Go somewhere
+
+        section.sectionThree
+            .jumbotron.jumbotron-fluid.jumbo-bcg
+                .container
+                    h1.display-4 Fluid jumbotron
+                    p.lead
+                        | This is a modified jumbotron that occupies the entire horizontal space of its parent.
+        section.sectionFour
+            .card.card-mr(style='width: 18rem;')
+                img.card-img-top(src='/images/card1.jpg' alt='...')
+                .card-body
+                    p.card-text
+                        | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+            .card.card-mr(style='width: 18rem;')
+                img.card-img-top(src='/images/card1.jpg' alt='...')
+                .card-body
+                    p.card-text
+                        | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+            .card.card-mr(style='width: 18rem;')
+                img.card-img-top(src='/images/card1.jpg' alt='...')
+                .card-body
+                   p.card-text
+                    | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+
+        section.conntect
+            div
+                h1 Connect With us
+            .social
+                img.social-img(src='/images/logo1.png' alt='apple')
+                img.social-img(src='/images/logo2.png' alt='apple')
+                img.social-img(src='/images/logo3.png' alt='apple')
+                img.social-img(src='/images/logo4.png' alt='apple')
+
+        section.sectionFive
+            h1 Write to Us
+            form.my-form(autocomplete='off')
+                label.form-label(for='name') Name :
+                input#name(type='text' name='name' placeholder='Write your name...')
+                label.form-label(for='email') Email :
+                input#email(type='email' name='email' placeholder='Write your name...')
+                label.form-label(for='text') Write your message below...
+                textarea#text(name='text' cols='30' rows='10' placeholder='Write here...')
+
+
+
+
+        
+
+
+    //- h1 This is Home Page
+    //- h3 #{message}
+
+    //- ul
+    //-     ul
+    //-         each item in articles
+    //-             li= item.title

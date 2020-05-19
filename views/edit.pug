@@ -1,0 +1,23 @@
+extends layout.pug
+
+block append head
+  link(rel="stylesheet" href="/css/all.css")
+
+block content
+  h1.editHead #{title}
+  div.container
+    form(action="/updateArticle/"+ Records._id, method="post")
+      #form-group
+        label Title:
+        input.form-control(name="title", type="text", placeholder="Add a title here.." value= Records.title)
+
+      #form-group
+        label Author:
+        input.form-control(name="author", type="text", placeholder="Add author name here.." value= Records.author)
+
+      #form-group
+        label Write Article:
+        textarea.form-control(name="body", type="text", placeholder="Write article here..")= Records.body
+      br
+      button.btn.btn-success
+        | Submit

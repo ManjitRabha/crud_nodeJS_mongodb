@@ -1,0 +1,23 @@
+{
+  "name": "crudoperation",
+  "version": "1.0.0",
+  "description": "Basic testing for crud operation using MongoDB, Express, mongoose, flash-message, Pug etc",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manjit",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.4.0",
+    "mongoose": "^5.9.10",
+    "pug": "^2.0.4"
+  }
+}

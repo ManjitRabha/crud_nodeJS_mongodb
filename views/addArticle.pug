@@ -1,0 +1,23 @@
+extends layout.pug
+
+block append head
+  link(rel="stylesheet" href="css/add.css")
+block content
+  //- include includes/navbar.pug
+  
+  div.heading
+    h3= msg
+  
+  div.container
+    form.myForm(action="/addArticle" method="POST" autocomplete="none")
+      .form-group
+        label(for='title') Add Title
+        input#title.form-control(type='text' name="title" placeholder='Enter a title...')
+      .form-group
+        label(for='author') Author Name
+        input#author.form-control(type='text' Name="author" placeholder='Author Name')
+      .form-group
+        label(for="body") Write the Article
+        textarea#body.form-control(name='body' rows='3' placeholder='Write your article here....')
+      div.mybtn
+        <button class="btn btn-success" type="submit">Submit</button>

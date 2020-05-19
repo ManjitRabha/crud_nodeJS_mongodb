@@ -1,0 +1,30 @@
+.heading {
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.heading h3 {
+  text-transform: uppercase;
+  color: red;
+  margin-top: 5rem;
+}
+}
+.myForm {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #f3f3f3d9;
+  color: red;
+}
+
+.myForm label {
+  padding-left: 0.5rem;
+}
+.myForm input, textarea:focus {
+  outline: none !important;
+}
+
+.mybtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,35 @@
+h2 {
+  text-align: center;
+  margin-top: 7rem;
+}
+.mylist {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#read-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+#manage-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mybtn {
+  margin: 0.5rem;
+}
+.btn-padding {
+  padding: 6px 21px;
+}
+.editstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editHead {
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+extends layout.pug
+
+block append head
+  link(rel="stylesheet" href="css/all.css")
+  
+block content
+  //- include includes/navbar.pug
+  div.container
+    h2 #{message}
+    ul.list-group
+    each item in Records
+      li.list-group-item.mylist
+        a(href="/oneArticle/"+item._id target="_blank")= item.title
